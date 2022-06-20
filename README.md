@@ -10,14 +10,14 @@ Using our own training dataset, we train the segmentation model and test the per
 2. Mask -> Flow: manual annotation -> simulated diffusion -> spatial gradients -> flow representations -> flow legend
 3. Original Image -> SIM: original image -> eigenvalues of the Hessian -> shape index map
 4. New Config of MiSiC: adjust the network structure, output from (256, 256, 1) -> (256, 256, 3)
-5. Cellpose original Code: load cellpose.dynamics, cellpose.plot, cellpose.transforms
+5. Cellpose original code: load cellpose.dynamics, cellpose.plot, cellpose.transforms
 6. Mask -> Flow: all the training images from mask to flow field
-7. Load new model: load the new defined model from step 4
+7. Load new model: load new constructed model from step 4
 8. Prepare dataset for training
-- Input and ouput: x is Shape_Index-Map and output is Flow Field
+- Input and ouput: x is Shape_Index-Map(256, 256, 3) and output is Flow Field(256, 256, 3)
 - Image augmentations, image cropping and stitching, image rescale and noise addition
-9. Train the model: train the model and save the network structure and parameters in hdf5 file
-10. MiSiC Functions: load MiSiC functions of image postprocessing
+9. Train the model: train the model and save the network structure and training parameters in hdf5 file
+10. MiSiC Functions: load MiSiC functions (image postprocessing)
 11. Prediction: predict the masks based on the model trained
 
 ## Version
