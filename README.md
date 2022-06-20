@@ -1,7 +1,7 @@
 # E.coli segmentation
 
 ## Background
-this research trained models for E.coli segmentation to improve the performance metrics including IoU (Intersection and Union), true positive, and f1 score.
+This research trained models for E.coli segmentation to improve the performance metrics including IoU (Intersection and Union), true positive, and f1 score.
 
 Using our own training dataset, we train the segmentation model and test the performance on rod-shaped bacterial E.coli
 
@@ -22,7 +22,9 @@ Using our own training dataset, we train the segmentation model and test the per
 
 ## Version
 Segmentation_Cellpose is based on the Cellpose[1]
+
 Segmentation_MiSiC is based on MiSiC[2]
+
 Segmentation_Cellpose_MiSiC is the combination of [1] and [2]
 
 ## Reference
